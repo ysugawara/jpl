@@ -2,7 +2,9 @@ package ch2;
 
 public class ex06 {
 
+	//リストのデータ
 	public Object Data;
+	//次のリスト
 	public ex05 next;
 	
 	public ex06(Object o, ex05 next) {
@@ -10,6 +12,10 @@ public class ex06 {
 		this.next = next;
 	}
 
+	/**
+	 * 乗り物を作成、連結リストで表示
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		ex05 Car = new ex05();
 		ex05 Bike = new ex05();

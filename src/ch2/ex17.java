@@ -3,12 +3,14 @@ package ch2;
 public class ex17 {
 	//乗り物の識別番号
 	private static int IdentificationNumber;
-	
+	//車ごとの識別番号
 	private long serialNumber;
+	//速度
 	private double speed;
+	//角度
 	private double angle;
+	//所有者
 	private String owner;
-	
 	//車のID
 	private int carID;
 	
@@ -22,9 +24,15 @@ public class ex17 {
 		owner = ownerName;
 	}
 	
+	//引数なしのコンストラクタ
 	public ex17() {
 	}
 
+	/**
+	 * 所有者を引数にしたコンストラクタの使用
+	 * @param args
+	 * @return void
+	 */
 	public static void main(String[] args) {
 		
 		ex17 Car = new ex17("Aさん");
@@ -66,6 +74,13 @@ public class ex17 {
 		System.out.println(Car.speed);
 	}
 	
+	/**
+	 * 今まで使用した識別番号の最大値を返す
+	 * @param CarNumber
+	 * @param bikeNumber
+	 * @param motorbikeNumber
+	 * @return 識別番号の最大値
+	 */
 	public static long returnMaxSerial(long CarNumber, long bikeNumber, long motorbikeNumber) {
 		long max = CarNumber;
 		if (bikeNumber > max) {
@@ -77,17 +92,27 @@ public class ex17 {
 		return max;
 	}
 	
+	/**
+	 * 追加したtoString
+	 */
 	public String toString() {
 		String info = "所有者: " + owner;
 		return info;
 	}
 	
-	//現在のスピードに変更するメソッド
+	/**
+	 * 現在のスピードに変更する
+	 * @param currentSpeed
+	 * @return void
+	 */
 	public void changeSpeed(double currentSpeed) {
 		setSpeed(currentSpeed);
 	}
 	
-	//スピードを０にするメソッド
+	/**
+	 * スピードを０にする
+	 * @return void
+	 */
 	public void stop() {
 		setSpeed(0);
 	}
@@ -98,7 +123,6 @@ public class ex17 {
 	}
 	
 	//引数として定数を受け取るメソッド？
-	
 	public long getSerialNumber() {
 		return serialNumber;
 	}

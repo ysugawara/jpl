@@ -3,13 +3,19 @@ package ch2;
 public class ex05 {
 	//乗り物の識別番号
 	public static String IdentificationNumber;
-	
+	//速度
 	public double speed;
+	//角度
 	public long angle;
+	//所有者
 	public String owner;
 	//車のID
 	public int carID;
 	
+	/**
+	 * 3つの乗り物を作成し、オブジェクトのフィールドを表示
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		ex05 Car = new ex05();
 		ex05 Bike = new ex05();

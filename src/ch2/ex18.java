@@ -3,12 +3,14 @@ package ch2;
 public class ex18 {
 	//乗り物の識別番号
 	private static int IdentificationNumber;
-
+	//車ごとの識別番号
 	private long serialNumber;
+	//速度
 	private double speed;
+	//角度
 	private double angle;
+	//所有者
 	private String owner;
-		
 	//車のID
 	private int carID;
 		
@@ -20,6 +22,7 @@ public class ex18 {
 	private static String inputOwner = "";
 
 	/**
+	 * コマンドプロンプトから確認
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -27,7 +30,7 @@ public class ex18 {
 		for (int i = 0; i < args.length; i++) {
 			inputOwner += args[i];
 		}
-		
+
 		ex18 Car = new ex18();
 		Car.serialNumber = 1;
 		Car.angle = 25.0;

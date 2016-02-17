@@ -1,5 +1,10 @@
 package ch2;
 
+/**
+ * 連結リストのクラス
+ * @author Yuuki
+ *
+ */
 public class ex16 {
 
 	private Object Data;

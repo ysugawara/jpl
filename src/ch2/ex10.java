@@ -3,10 +3,13 @@ package ch2;
 public class ex10 {
 	//乗り物の識別番号
 	public static int IdentificationNumber;
-	
+	//最大の識別番号
 	public long serialNumber;
+	//速度
 	public double speed;
+	//角度
 	public long angle;
+	//所有者
 	public String owner;
 	//車のID
 	public int carID;
@@ -22,6 +25,10 @@ public class ex10 {
 		owner = ownerName;
 	}
 	
+	/**
+	 * 3つの乗り物を作成し、オブジェクトのフィールドを表示
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		ex10 Car = new ex10("Aさん");
@@ -58,6 +65,13 @@ public class ex10 {
 		System.out.println("バイクの" + motorbike);
 	}
 	
+	/**
+	 * 最大の識別番号を返す
+	 * @param CarNumber
+	 * @param bikeNumber
+	 * @param motorbikeNumber
+	 * @return
+	 */
 	public static long returnMaxSerial(long CarNumber, long bikeNumber, long motorbikeNumber) {
 		long max = CarNumber;
 		if (bikeNumber > max) {
@@ -69,6 +83,9 @@ public class ex10 {
 		return max;
 	}
 	
+	/**
+	 * 追加したtoString
+	 */
 	public String toString() {
 		String info = "所有者: " + owner;
 		return info;

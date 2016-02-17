@@ -1,5 +1,10 @@
 package ch2;
 
+/**
+ * 連結リストクラス
+ * @author Yuuki
+ *
+ */
 public class ex02 {
 	public Object Data;
 	public ex02 next;
