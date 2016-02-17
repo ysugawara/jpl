@@ -4,6 +4,7 @@ public class ex03 {
 
 	/**
 	 * 値が5未満のフィボナッチ数列を表示する
+	 * @return void
 	 */
 	public static void main(String[] args) {
 		System.out.println("+---------------------------------------+");

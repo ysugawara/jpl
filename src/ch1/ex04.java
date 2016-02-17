@@ -4,6 +4,7 @@ public class ex04 {
 
 	/**
 	 * 任意の数列を表示する（トリボナッチ/平方表）
+	 * @return void
 	 */
 	public static void main(String[] args) {
 		//トリボナッチ数列

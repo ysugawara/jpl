@@ -1,9 +1,11 @@
 package ch1;
 
 public class ex07 {
+	//名前付文字列定数
 	static final int MAX_INDEX = 8;
 	/**
 	 * 偶数要素に'※'をつけて、フィボナッチ数列の最初の方の要素を表示する
+	 * @return void
 	 */
 	public static void main(String[] args) {
 		int lo = 1;

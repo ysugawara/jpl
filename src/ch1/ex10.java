@@ -5,6 +5,7 @@ public class ex10 {
 	static final int MAX_INDEX = 10;
 	/**
 	 * 偶数要素に'※'をつけて、フィボナッチ数列の最初の方の要素を表示する
+	 * @return void
 	 */
 	public static void main(String[] args) {
 		int ImprovedFibonacci[] = new int[MAX_INDEX];

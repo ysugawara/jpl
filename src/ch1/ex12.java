@@ -6,6 +6,7 @@ public class ex12 {
 	/**
 	 * 偶数要素に'※'をつけて、フィボナッチ数列の最初の方の要素を表示する
 	 * Stringオブジェクトを使用
+	 * @return void
 	 */
 	public static void main(String[] args) {
 		int ImprovedFibonacci[] = new int[MAX_INDEX];

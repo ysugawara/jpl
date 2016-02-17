@@ -4,6 +4,7 @@ public class ex02 {
 
 	/**
 	 * ƒGƒ‰[‚ğ”­¶‚³‚¹‚Ä‚İ‚é
+	 * @return void
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
